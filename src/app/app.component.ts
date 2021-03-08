@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'data-binding-app';
+  numPresses: number = 0;
+  hidden: boolean = true;
+
+  count() {
+    this.numPresses++;
+  }
+
+  show() {
+    this.hidden = !this.hidden;
+  }
 }
